@@ -1,10 +1,10 @@
 # SenacFlix
 
 ## 🎬 Tema Do Projeto
- O nosso tema é curtas produzidos por alunos do senac
+ O nosso tema é "Curtas metragens".
 
 ## 🤓 Área do Projeto
- Artes e Linguagens 
+ Artes e Linguagens.
 
 ## 👥 Integrantes
 | Nomes            | GitHub                  |
@@ -27,11 +27,11 @@
  Esse projeto foi desenvolvido com base na necessidade de poder reassistir os filmes, pois os mini projetos dos alunos só foram vistos uma vez só.
 
 ## 🔧 Ferramentas Utilizadas
--  Liguagens: [HTML. CSS, JavaScript]
--  Ambiente de Desenvolvimento: [VSCode, GitHub]
+-  Liguagens: HTML. CSS, JavaScript;
+-  Ambiente de Desenvolvimento: VSCode, GitHub.
 
 ## 👣 Passos para a aAplicação do Projeto
-1. Instalação: Clone o repositório e instale as dependências necessárias
+1. Instalação: Clone o repositório e instale as dependências necessárias.
 
 ## 📷 Fotos e Prints
 ![image](https://github.com/user-attachments/assets/e7b0cf25-7adf-4470-9687-7608353601ed)
