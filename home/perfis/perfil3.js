@@ -8,10 +8,6 @@ window.onload = function () {
   imagemPerfil.className = "images";
 }
 
-function editYearOld() {
-  // Função removida, pois não há mais necessidade de editar a faixa etária
-}
-
 function changeImage() {
   let imagemPerfil = document.getElementById('imagem');
   var imagemPerfilTeste = prompt('Selecione a nova imagem:\n1 - kid-one\n2 - kid-two\n3 - monster-one\n4 - monster-two\n5 - robot');
