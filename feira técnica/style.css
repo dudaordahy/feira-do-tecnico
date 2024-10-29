@@ -142,9 +142,8 @@ header nav button{
 .cartaz{
   margin: 20px;
   font-size: 20px;
-  display: inline;
+  display: inline-block;
   justify-content: space-between;
-  
 }
 .cartaz-button{
   width: 250px;
@@ -155,6 +154,6 @@ header nav button{
   transition: ease-in 1.5s;
 }
 .cartaz-button:hover{
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    height: 370px;
 }
