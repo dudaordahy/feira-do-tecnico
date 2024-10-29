@@ -58,20 +58,20 @@ header nav button{
 .carousel {
     background-color: transparent;
     position: relative;
-  }
-  .mySlides {
+}
+.mySlides {
     display: none;
     height: 70%;
     width: auto;
     padding: 0;
     margin: 0 auto;
-  }
+}
   .slideshow-container {
     position: relative;
     margin: 0;
-  }
-  .carousel .prev,
-  .carousel .next{
+}
+.carousel .prev,
+.carousel .next{
     background-color: rgba(0,0,0,0.2);
     cursor: pointer;
     position: absolute;
@@ -86,25 +86,25 @@ header nav button{
     border: none;
     user-select: none;
     left: 0;
-  }
-  .carousel .next{
+}
+.carousel .next{
     left: unset;
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  .carousel .prev:hover,  
-  .carousel .prev:focus,
-  .carousel .next:hover,
-  .carousel .next:focus{
+}
+.carousel .prev:hover,  
+.carousel .prev:focus,
+.carousel .next:hover,
+.carousel .next:focus{
     background-color: rgba(0,0,0,0.4);
     color: #fff;
-  }
-  .carousel .fade {
+}
+.carousel .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
 
 .dm-sans-uniquifier {
   font-family: "DM Sans", sans-serif;
@@ -123,8 +123,8 @@ header nav button{
 .button-watch{
   z-index: 1000;
   position: absolute;
-  width: 100px;
-  height: 40px;
+  width: 130px;
+  height: 50px;
   background-color: #08009a;
   color: #fff;
   border: none;
@@ -132,16 +132,29 @@ header nav button{
   border-radius: 10px;
   margin: 40% 70px;
 }
-.button-watch2{
-  z-index: 1000;
-  position: absolute;
-  width: 100px;
-  height: 40px;
-  background-color: #08009a;
-  color: #fff;
+.section-cartaz{
+  width: auto;
+  height: 50%;
+  margin: 20px;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.cartaz{
+  margin: 20px;
+  font-size: 20px;
+  display: inline;
+  justify-content: space-between;
+  
+}
+.cartaz-button{
+  width: 250px;
+  height: 350px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
-  border-radius: 10px;
-  margin-top: 200px;
-  margin-left: 70px;
+  transition: ease-in 1.5s;
+}
+.cartaz-button:hover{
+    width: 300px;
+    height: 400px;
 }
