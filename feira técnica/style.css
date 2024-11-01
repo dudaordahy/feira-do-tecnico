@@ -55,9 +55,117 @@ header nav button{
     margin-left: 75px;
     border-radius: 5px;
 }
+.carousel {
+    background-color: transparent;
+    position: relative;
+}
+.mySlides {
+    display: none;
+    height: 70%;
+    width: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+  .slideshow-container {
+    position: relative;
+    margin: 0;
+}
+.carousel .prev,
+.carousel .next{
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: 0.6s ease;
+    border: none;
+    user-select: none;
+    left: 0;
+}
+.carousel .next{
+    left: unset;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.carousel .prev:hover,  
+.carousel .prev:focus,
+.carousel .next:hover,
+.carousel .next:focus{
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+}
+.carousel .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
 .dm-sans-uniquifier {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+.texto{
+  z-index: 1000;
+  position: absolute;
+  margin: 30% 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 100px;
+  color: #fff;
+}
+.button-watch{
+  z-index: 1000;
+  position: absolute;
+  width: 130px;
+  height: 50px;
+  background-color: #08009a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 40% 70px;
+}
+.button-watch2{
+    z-index: 1000;
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    background-color: #08009a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 50% 70px;
+  }
+.section-cartaz{
+  width: auto;
+  height: 50%;
+  margin: 20px;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.cartaz{
+  margin: 20px;
+  font-size: 20px;
+  display: inline-block;
+  justify-content: space-between;
+}
+.cartaz-button{
+  width: 250px;
+  height: 350px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: ease-in 1.5s;
+}
+.cartaz-button:hover{
+    width: 270px;
+    height: 370px;
 }
