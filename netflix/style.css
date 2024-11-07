@@ -60,16 +60,106 @@ header nav button{
     margin-left: 75px;
 
 }
+.carousel {
+    min-height: 200px;
+    background-color: #e6e6e6;
+    position: relative;
+  }
+  .mySlides {
+    display: none;
+    height: auto;
+    width: auto;
+    padding: 0;   
+    margin: 0 auto;
+  }
+  .slideshow-container {
+    position: relative;
+    margin: 0 auto;
+  }
+  .carousel .prev,
+  .carousel .next{
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: 0.6s ease;
+    border: none;
+    user-select: none;
+    left: 0;
+  }
+  .carousel .next{
+    left: unset;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .carousel .prev:hover,  
+  .carousel .prev:focus,
+  .carousel .next:hover,
+  .carousel .next:focus{
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+  }
+  .carousel .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .texto{ 
+    z-index: 1000;
+    position: absolute;
+    margin: 30% 50px;
+    font-family: sans-serif;
+    font-size: 100px;
+    color: #fff;
+    
+  }
+ .Assistir{
+  z-index: 1000;
+  position: absolute;
+  margin: 40% 70px;
+  padding: 20px 40px;
+  font-family: sans-serif;
+  background-color: #08009a;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
 
+ }
+ .cartaz{
+  width: auto;
+  height: 50%;
+  margin: 20px;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #ff8a00;
 
+ }
+ .mi{
+  margin: 10px;
+  display: inline-block;
+  justify-content: space-between;
 
-
-
-
-
-
-
-
-
-
-
+ }
+ .i{
+  width: 210px;
+  height: 260px; 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: ease-in 1s;
+ }
+ .i:hover{
+ width: 220px;
+  height: 270px;
+  
+  
+ }
