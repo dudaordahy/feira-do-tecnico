@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="shortcut icon" href="../profile-images/logo-netflix.png" type="image/x-icon" />
+    <title>Netflix</title>
+    <script src="perfil9.js"></script>
+
+</head>
+<body>
+  <main>
+    <section>
+    <h1>Editar Perfil</h1>
+    
+        <hr>
+      <form action="submit">
+        <div id="one">
+          <img src="" alt="" id="imagem"  onclick="changeImage()"/>
+        </div >
+        
+        <input type="text" id="show" placeholder="Nome">
+        <label for="idioma" id="idiomas">Idioma:</label>
+        <br>
+        <select name="idioma" id="idioma">
+          <option value="Português">Português</option>
+          <option value="English">English</option>
+          <option value="Español">Español</option>
+          <option value="Filipino">Filipino</option>
+          <option value="Italiano">Italiano</option>
+          <option value="Nederlands">Nederlands</option>
+          <option value="Dansk">Dansk</option>
+        </select>
+        <hr class="hrbaixo">
+        <label for="etaria" id="idiomas">Configurações de faixa etária:</label>
+        <p id="block">Todas as classificações etárias</p>
+        <p id="paragrafo">Mostrar títulos de todas as classificações etárias para este perfil.</p>
+        <input type="button" value="Editar" id="editarr" onclick="editYearOld()">
+        <hr class="hrbaixo">
+        <h3 for="controle" id="idiomas">Controles de início automático:</h3>
+        
+        <input type="checkbox" name="controle" id="control" checked> <label for="control" class="labels">Iniciar automaticamente o próximo episódio de uma série em todos os aparelhos.</label>  
+        <input type="checkbox" name="controle" id="control" checked> <label for="control" class="labels">Reproduzir automaticamente as prévias ao navegar em todos os aparelhos.</label>
+        <hr>
+        <div id="finalbutton">
+          <input type="button" id="Salvar" value="Salvar" class="editSave" onclick="save()">
+          <input type="button" id="Cancelar" value="Cancelar" class="editarrr" onclick="cancel()">
+          <input type="button" id="Excluir" value="Excluir Perfil" class="editarrr" onclick="deleted()">
+         </div>
+        </form>
+</section>
+
+</main>  
+   
+</body>
+</html>
