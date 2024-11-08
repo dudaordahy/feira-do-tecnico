@@ -106,7 +106,7 @@
     position: absolute;
     margin: 10px;
     z-index: 1000;
-    top: 260px;
+    top: 310px;
     left: 500px;
     font-size: 20px;
     font-family: sans-serif;
@@ -120,7 +120,7 @@
     border: none;
     cursor: pointer;
     text-decoration: none;
-    top: 420px;
+    top: 500px;
     left: 520px;
     border-radius: 10px;
     font-family: sans-serif;
