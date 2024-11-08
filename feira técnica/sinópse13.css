@@ -130,3 +130,11 @@
   .button-watch:hover{
     padding: 23px 43px;
   }
+  footer {
+    background-color: #ffffff;
+    color: #08009aff;
+    font-family: sans-serif;
+    text-align: center;
+    position: center;
+    width: 100%;
+  }

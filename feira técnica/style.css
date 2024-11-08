@@ -134,12 +134,6 @@ body{
   animation-duration: 1.5s;
 }
 
-.dm-sans-uniquifier {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
 .texto{
   z-index: 1000;
   position: absolute;
@@ -206,4 +200,12 @@ body{
 .cartaz-button:hover{
   width: 260px;
   height: 360px;
+}
+footer {
+  background-color: #ffffff;
+  color: #08009aff;
+  font-family: sans-serif;
+  text-align: center;
+  position: center;
+  width: 100%;
 }
