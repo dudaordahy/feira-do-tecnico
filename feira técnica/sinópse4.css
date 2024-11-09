@@ -85,6 +85,7 @@
     cursor: pointer;
   }
 .cartaz{
+  margin-left: 30px;
     width: 450px;
     height: 550px;
 }
