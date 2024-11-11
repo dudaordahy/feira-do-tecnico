@@ -1,184 +1,107 @@
-
-
 class Perfis {
-    constructor (name, photo) {
-        this.name = name,
-        this.photo = photo
+    constructor(name, photo) {
+        this.name = name;
+        this.photo = photo;
     }
 }
 
-let perfil = []
-let years = []
-var one = 0
+let perfil = [];
+let years = [];
+var one = 0;
 
 
-    window.onload = function () {
-        if (localStorage){
-            var olderPerfils = JSON.parse(localStorage.getItem(('perfis')))
-            console.log (olderPerfils.length)
-            for (let i = 0; i < olderPerfils.length; i++){
-               if (i%2==0){
-                console.log (olderPerfils[i+1])
-                    let newe = document.createElement ("div")
-                    newe.id = 'foto1'
-                    newe.className = 'perfis'
-                    newe.href = '/src/browse.html' 
-                    
-                    let show = document.createElement('img')
-                    show.src = olderPerfils[i+1]
-                    show.className = 'images'
-                    
-                    let text1 = document.createElement('span')
-                    text1.innerHTML = olderPerfils[i]
+window.onload = function() {
+    localStorage.clear();
+    if (localStorage) {
+        let olderPerfils = JSON.parse(localStorage.getItem('perfis')) || [];
 
-                    let a = document.createElement('a')
-                    a.id = `id${i+1}`
-                    a.href = '/src/browse.html'
+        if (olderPerfils.length > 0) {
+            olderPerfils.forEach((perfilData, index) => {
+                let newe = document.createElement("div");
+                newe.id = `foto${index}`;
+                newe.className = 'perfis';
 
-                    newe.appendChild(a)
-                    a.appendChild(show)  
-                    a.appendChild(text1)                   
-                    
+                let show = document.createElement('img');
+                show.src = perfilData.photo;
+                show.className = 'images';
 
-                    const botaoo = document.getElementById('agua')
-                    let nomes = document.getElementById('botdiv')
-                    
-                    botaoo.insertBefore(newe,nomes)
-                    
-                    
-                }
+                let text1 = document.createElement('span');
+                text1.innerHTML = perfilData.name;
 
-            
-            }
-        }
-        let newPerfilButton = document.getElementById('bot1')
-        let perfilManage = document.getElementById('botdiv2')
-        if (olderPerfils.length > 9){
-            newPerfilButton.style.display = 'none'
-            perfilManage.style.marginLeft = '-45px'
+                newe.appendChild(show);
+                newe.appendChild(text1);
+
+                const botaoo = document.getElementById('agua');
+                let nomes = document.getElementById('botdiv');
+                botaoo.insertBefore(newe, nomes);
+            });
         }
 
-}   
+        let newPerfilButton = document.getElementById('bot1');
+        let perfilManage = document.getElementById('botdiv2');
+        if (olderPerfils.length > 9) {
+            newPerfilButton.style.display = 'none';
+            perfilManage.style.marginLeft = '-45px';
+        }
+    }
+};
 
+function namee() {
+    let nome = prompt("Qual o nome do usuário?");
+    let imagemPerfilTeste = prompt('Selecione a nova imagem:\n1 - kid-one\n2 - kid-two\n3 - monster-one\n4 - monster-two\n5 - robot');
 
-
-
-function namee (){
-    
-    var data
-    let nome = prompt("Qual o nome do usuário?")
-    let yearOld = prompt ("Qual a faixa etária do perfil?\n1 - Crianças pequenas\n2 - Crianças mais velhas (10+)\n3 - Adolescentes (12+)\n4 - Adulto (livre)")
-        switch (Number(yearOld)) {
-            case 1:
-                var chooseImage = prompt("Escolha a foto de perfil:\n1 - kid-one\n2 - kid-two\n3 - monster-one\n4 - monster-two\n5 - robot")
-                    switch (Number(chooseImage)){
-                        case 1:
-                            data = "../profile-images/kid-one.png"
-                            break;
-                        case 2:
-                            data = "../profile-images/kid-two.png"
-                            break;
-                        case 3:
-                            data = "../profile-images/monster-one.png"
-                            break;
-                        case 4:
-                            data = "../profile-images/monster-two.png"
-                            break;
-                        case 5:
-                            data = "../profile-images/robot.png"
-                            break;
-                    }
-                break;
-            case 2:
-                chooseImage = prompt("Escolha a foto de perfil:\n1 - boy-one\n2 - boy-two\n3 - girl-one\n4 - girl-two\n5- robot")
-                   switch (Number(chooseImage)){
-                        case 1:
-                            data = "../profile-images/boy-one.png"
-                            break;
-                        case 2:
-                            data = "../profile-images/boy-two.png"
-                            break;
-                        case 3:
-                            data = "../profile-images/girl-one.png"
-                            break;
-                        case 4:
-                            data = "../profile-images/girl-two.png"
-                            break;
-                        case 5:
-                            data = "../profile-images/robot.png"
-                            break;
-                }
-                break;
-            case 3:
-                chooseImage = prompt("Escolha a foto de perfil:\n1 - boy-one\n2 - boy-two\n3 - girl-one\n4 - girl-two")
-                switch (Number(chooseImage)){
-                    case 1:
-                        data = "../profile-images/boy-one.png"
-                        break;
-                    case 2:
-                        data = "../profile-images/boy-two.png"
-                        break;
-                    case 3:
-                        data = "../profile-images/girl-one.png"
-                        break;
-                    case 4:
-                        data = "../profile-images/girl-two.png"
-                        break;
-            }
+    switch (Number(imagemPerfilTeste)) {
+        case 1:
+            imagemPerfilTeste = "../profile-images/kid-one.png";
             break;
-            case 4:
-                chooseImage = prompt("Escolha a foto de perfil:\n1 - man-one\n2 - woman-one\n3 - robot")
-                switch (Number(chooseImage)){
-                    case 1:
-                        data = "../profile-images/man-one.png"
-                        break;
-                    case 2:
-                        data = "../profile-images/woman-one.png"
-                        break;
-                    case 3:
-                        data = "../profile-images/robot.png"
-                        break;
-            }
+        case 2:
+            imagemPerfilTeste = "../profile-images/kid-two.png";
             break;
-            default:
-                alert = ("opção invalida")
-        }
-
-    
-console.log (perfil)
-    if (nome && data) {
-        perfil.push (nome, data)
-        years.push (yearOld)
-    let newe = document.createElement ("div")
-    newe.id = 'foto1'
-    newe.className = 'perfis'
-    
-    let show = document.createElement('img')
-    show.src = data
-    show.className = 'images'
-   
-    let text1 = document.createElement('span')
-    text1.innerHTML = nome
-    const botaoo = document.getElementById('agua')
-    let nomes = document.getElementById('botdiv')
-    let newPerfilButton = document.getElementById('bot1')
-    let perfilManage = document.getElementById('botdiv2')
-
-    botaoo.insertBefore(newe,nomes)
-    newe.appendChild(show)   
-    newe.appendChild(text1)
-        console.log(perfil)
-    console.log (perfil.length)
-    if (perfil.length > 9){
-        newPerfilButton.style.display = 'none'
-        perfilManage.style.marginLeft = '55px'
+        case 3:
+            imagemPerfilTeste = "../profile-images/monster-one.png";
+            break;
+        case 4:
+            imagemPerfilTeste = "../profile-images/monster-two.png";
+            break;
+        case 5:
+            imagemPerfilTeste = "../profile-images/robot.png";
+            break;
+        default:
+            alert("Opção inválida");
+            return;
     }
 
-        
-    localStorage.setItem('perfis', JSON.stringify(perfil));
-    localStorage.setItem('idades', JSON.stringify(years))
-}
-    
-}
+    if (nome && imagemPerfilTeste) {
+        let novoPerfil = new Perfis(nome, imagemPerfilTeste);
+        perfil.push(novoPerfil);
 
+        let newe = document.createElement("div");
+        newe.id = `foto${perfil.length}`;
+        newe.className = 'perfis';
 
+        let show = document.createElement('img');
+        show.src = imagemPerfilTeste;
+        show.className = 'images';
+
+        let text1 = document.createElement('span');
+        text1.innerHTML = nome;
+
+        const botaoo = document.getElementById('agua');
+        let nomes = document.getElementById('botdiv');
+        botaoo.insertBefore(newe, nomes);
+
+        newe.appendChild(show);
+        newe.appendChild(text1);
+
+        let newPerfilButton = document.getElementById('bot1');
+        let perfilManage = document.getElementById('botdiv2');
+
+        if (perfil.length > 9) {
+            newPerfilButton.style.display = 'none';
+            perfilManage.style.marginLeft = '55px';
+        }
+
+        // Atualiza o localStorage com o novo perfil
+        localStorage.setItem('perfis', JSON.stringify(perfil));
+    }
+}

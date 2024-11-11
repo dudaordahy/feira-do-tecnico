@@ -62,4 +62,4 @@ function deleted() {
   perfilStoragesDel[0] = 'New Perfil';
   perfilStoragesDel[1] = '../profile-images/new-perfil-image.png';
   localStorage.setItem('perfis', JSON.stringify(perfilStoragesDel));
-  location.href = '../src/gerenciar-copy.html';
+}
