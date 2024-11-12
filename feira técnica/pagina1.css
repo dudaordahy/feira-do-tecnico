@@ -159,7 +159,7 @@ body{
   transition: ease-in 0.5s;
 }
 .button-watch:hover{
-  padding: 25px 45px;
+  padding: 23px 43px;
 }
 .button-watch2{
   z-index: 1000;
@@ -176,7 +176,7 @@ body{
   transition: ease-in 0.5s;
 }
 .button-watch2:hover{
-  padding: 25px 45px; 
+  padding: 23px 43px; 
 }
 .section-cartaz{
   width: auto;
@@ -200,6 +200,14 @@ body{
   transition: ease-in 0.5s;
 }
 .cartaz-button:hover{
-  width: 270px;
-  height: 370px;
+  width: 260px;
+  height: 360px;
+}
+footer {
+  background-color: #ffffff;
+  color: #08009aff;
+  font-family: sans-serif;
+  text-align: center;
+  position: center;
+  width: 100%;
 }
