@@ -79,9 +79,9 @@ function namee() {
         newe.id = `foto${perfil.length}`;
         newe.className = 'perfis';
 
-        let link = document.createElement("a");
-        link.href = 'pagina1.html'; // Substitua pela URL desejada
-        newe.className = 'link1'
+        const link = document.createElement("a");
+        link.href = '../feira técnica/pagina1.html';
+        link.id = "pagina";
 
         let show = document.createElement('img');
         show.src = imagemPerfilTeste;
@@ -106,7 +106,6 @@ function namee() {
             perfilManage.style.marginLeft = '55px';
         }
 
-        // Atualiza o localStorage com o novo perfil
         localStorage.setItem('perfis', JSON.stringify(perfil));
     }
 }
