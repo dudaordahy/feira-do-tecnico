@@ -80,7 +80,7 @@ function namee() {
         newe.className = 'perfis';
 
         const link = document.createElement("a");
-        link.href = '../feira técnica/pagina1.html';
+        link.href = "c:/Users/EDUARDAORDAHYSCIORTI/Documents/GitHub/feira-do-tecnico/feira técnica/pagina1.html"
         link.id = "pagina";
 
         let show = document.createElement('img');

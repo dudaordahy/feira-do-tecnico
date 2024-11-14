@@ -178,7 +178,7 @@
  }
  .i{
   width: 215px;
-  height: 265px; 
+  height: 315px; 
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -186,7 +186,7 @@
 }
 .i:hover{
   width: 225px;
-  height: 275px;
+  height: 325px;
 }
 footer {
   background-color: #ffffff;

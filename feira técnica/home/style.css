@@ -51,10 +51,9 @@ section {
 #pagina{
     width: 150px;
     height: 150px;
-    display: inline-block;
+    display: flex;
     cursor: pointer;
     border-radius: 6px;
-
 }
 
 span {
