@@ -20,9 +20,6 @@ header nav a {
   text-decoration: none;
   color: #08009a;
 }
-header nav a:hover{
-  text-decoration: underline;
-}
 body{
   margin: 0;
 }
@@ -192,16 +189,16 @@ body{
   justify-content: space-between;
 }
 .cartaz-button{
-  width: 250px;
-  height: 350px;
+  width: 210px;
+  height: 310px;
   background-color: transparent;
   border: none;
   cursor: pointer;
   transition: ease-in 0.5s;
 }
 .cartaz-button:hover{
-  width: 260px;
-  height: 360px;
+  width: 220px;
+  height: 320px;
 }
 footer {
   background-color: #ffffff;
