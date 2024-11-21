@@ -79,10 +79,6 @@ function namee() {
         newe.id = `foto${perfil.length}`;
         newe.className = 'perfis';
 
-        const link = document.createElement("a");
-        link.href = "c:/Users/EDUARDAORDAHYSCIORTI/Documents/GitHub/feira-do-tecnico/feira técnica/pagina1.html"
-        link.id = "pagina";
-
         let show = document.createElement('img');
         show.src = imagemPerfilTeste;
         show.className = 'images';
