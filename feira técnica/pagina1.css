@@ -185,20 +185,21 @@ body{
 }
 .cartaz{
   margin: 20px;
+  align-items: center;
   display: inline-block;
   justify-content: space-between;
 }
 .cartaz-button{
-  width: 210px;
-  height: 310px;
+  width: 190px;
+  height: 290px;
   background-color: transparent;
   border: none;
   cursor: pointer;
   transition: ease-in 0.5s;
 }
 .cartaz-button:hover{
-  width: 220px;
-  height: 320px;
+  width: 200px;
+  height: 300px;
 }
 footer {
   background-color: #ffffff;

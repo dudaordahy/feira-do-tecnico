@@ -91,7 +91,6 @@ function namee() {
         botaoo.insertBefore(newe, nomes);
 
         newe.appendChild(show);
-        newe.appendChild(link);
         newe.appendChild(text1);
 
         let newPerfilButton = document.getElementById('bot1');
