@@ -9,13 +9,13 @@ let perfil = [];
 let years = [];
 var one = 0;
 
-
-window.onload = function() {
-    localStorage.clear();
+window.onload = function () {
+    localStorage.clear()
     if (localStorage) {
         let olderPerfils = JSON.parse(localStorage.getItem('perfis')) || [];
 
         if (olderPerfils.length > 0) {
+            perfil = olderPerfils; // Recupera os perfis existentes no array
             olderPerfils.forEach((perfilData, index) => {
                 let newe = document.createElement("div");
                 newe.id = `foto${index}`;

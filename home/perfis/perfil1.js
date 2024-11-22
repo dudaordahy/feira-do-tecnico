@@ -1,56 +1,62 @@
 window.onload = function () {
-  var loucos = document.getElementById('show');
-  var louco = JSON.parse(localStorage.getItem(('perfis')));
-  loucos.value = louco[0];
-    
-  let imagemPerfil = document.getElementById('imagem');
-  imagemPerfil.src = louco[1];
-  imagemPerfil.className = "images";
-}
+  var perfilStorage = JSON.parse(localStorage.getItem('perfis')) || [];
+
+  if (perfilStorage.length > 0) {
+      var nameInput = document.getElementById('show');
+      var imagemPerfil = document.getElementById('imagem');
+
+      // Preencher os dados do perfil atual
+      nameInput.value = perfilStorage[0].name;
+      imagemPerfil.src = perfilStorage[0].photo;
+      imagemPerfil.className = "images";
+  }
+};
 
 function changeImage() {
-  let imagemPerfil = document.getElementById('imagem');
+  var imagemPerfil = document.getElementById('imagem');
   var imagemPerfilTeste = prompt('Selecione a nova imagem:\n1 - kid-one\n2 - kid-two\n3 - monster-one\n4 - monster-two\n5 - robot');
-  
+
   switch (Number(imagemPerfilTeste)) {
-    case 1:
-      imagemPerfilTeste = "../profile-images/kid-one.png";
-      break;
-    case 2:
-      imagemPerfilTeste = "../profile-images/kid-two.png";
-      break;
-    case 3:
-      imagemPerfilTeste = "../profile-images/monster-one.png";
-      break;
-    case 4:
-      imagemPerfilTeste = "../profile-images/monster-two.png";
-      break;
-    case 5:
-      imagemPerfilTeste = "../profile-images/robot.png";
-      break;
+      case 1:
+          imagemPerfilTeste = "../profile-images/kid-one.png";
+          break;
+      case 2:
+          imagemPerfilTeste = "../profile-images/kid-two.png";
+          break;
+      case 3:
+          imagemPerfilTeste = "../profile-images/monster-one.png";
+          break;
+      case 4:
+          imagemPerfilTeste = "../profile-images/monster-two.png";
+          break;
+      case 5:
+          imagemPerfilTeste = "../profile-images/robot.png";
+          break;
   }
 
   if (imagemPerfilTeste) {
-    imagemPerfil.src = imagemPerfilTeste;
+      imagemPerfil.src = imagemPerfilTeste;
   }
 }
 
 function save() {
   var nameInput = document.getElementById('show');
   var imagemPerfil = document.getElementById('imagem');
-  var perfilStorages = JSON.parse(localStorage.getItem(('perfis')));
-  
-  let cancelButton = document.getElementById('Cancelar');
-  cancelButton.className = 'posTouch';
-  cancelButton.value = 'Retornar';
-  
-  let saveButton = document.getElementById('Salvar');
-  saveButton.className = 'editarrr';
-  
-  perfilStorages[0] = nameInput.value;
-  perfilStorages[1] = imagemPerfil.src;
-  
-  localStorage.setItem('perfis', JSON.stringify(perfilStorages));
+  var perfilStorage = JSON.parse(localStorage.getItem('perfis')) || [];
+
+  if (perfilStorage.length > 0) {
+      perfilStorage[0] = {
+          name: nameInput.value,
+          photo: imagemPerfil.src
+      };
+  } else {
+      perfilStorage.push({
+          name: nameInput.value,
+          photo: imagemPerfil.src
+      });
+  }
+
+  localStorage.setItem('perfis', JSON.stringify(perfilStorage));
 }
 
 function cancel() {
@@ -58,8 +64,13 @@ function cancel() {
 }
 
 function deleted() {
-  var perfilStoragesDel = JSON.parse(localStorage.getItem(('perfis')));
-  perfilStoragesDel[0] = 'New Perfil';
-  perfilStoragesDel[1] = '../profile-images/new-perfil-image.png';
-  localStorage.setItem('perfis', JSON.stringify(perfilStoragesDel));
+  var perfilStorage = JSON.parse(localStorage.getItem('perfis')) || [];
+  if (perfilStorage.length > 0) {
+      perfilStorage[0] = {
+          name: 'Novo Perfil',
+          photo: '../profile-images/new-perfil-image.png'
+      };
+  }
+
+  localStorage.setItem('perfis', JSON.stringify(perfilStorage));
 }
