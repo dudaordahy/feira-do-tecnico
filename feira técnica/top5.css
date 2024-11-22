@@ -196,3 +196,24 @@ footer {
   position: center;
   width: 100%;
 }
+.autocomplete-suggestions {
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  right: 0;
+  z-index: 1000;
+  max-height: 200px;
+  max-width: 250px;
+  overflow-y: auto;
+  border-radius: 16px;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}

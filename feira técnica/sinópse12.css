@@ -97,7 +97,7 @@ body{
 .title{
   position: absolute;
   margin: 10px;
-  z-index: 1000;
+  z-index: 100;
   top: 160px;
   left: 500px;
   font-size: 60px;
