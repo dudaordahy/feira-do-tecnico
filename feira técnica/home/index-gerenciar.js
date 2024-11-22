@@ -21,7 +21,7 @@ if (localStorage) {
 
             
 
-        var linkPerfil = `../Perfis/perfil${i+1}.html`
+        var linkPerfil = `../home/perfil${i+1}.html`
         
         var a = document.createElement('a')
         a.id = `id${i+1}`

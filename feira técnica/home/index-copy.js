@@ -6,7 +6,6 @@ class Perfis {
 }
 
 let perfil = [];
-let years = [];
 var one = 0;
 
 
@@ -101,6 +100,6 @@ function namee() {
             perfilManage.style.marginLeft = '55px';
         }
 
-        localStorage.setItem('perfis', JSON.stringify(perfil));
+        localStorage.setItem('perfis', JSON.stringify(perfil));s
     }
 }
