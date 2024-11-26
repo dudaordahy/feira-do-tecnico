@@ -44,4 +44,6 @@
 ### Tela inicial
 ![image](https://github.com/user-attachments/assets/74ae30fe-cd1f-4626-a0c9-9a70bf1a314c)
 ![image](https://github.com/user-attachments/assets/66f449af-237c-4974-8aec-232edf9e8ae4)
+![image](<img width="960" alt="pagina1" src="https://github.com/user-attachments/assets/14384527-1414-4d08-9be7-fe97835bd1a4">
+
 
