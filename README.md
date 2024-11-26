@@ -34,16 +34,16 @@
 1. Instalação: Clone o repositório e instale as dependências necessárias.
 
 ## 📷 Fotos e Prints
-![image](https://github.com/user-attachments/assets/e7b0cf25-7adf-4470-9687-7608353601ed)
-![image](https://github.com/user-attachments/assets/61ee11ee-d8ff-4ce1-b598-2b8322531a64)
-![image](https://github.com/user-attachments/assets/0afdf7eb-0272-4c50-9a27-d66eb2c51e3c)
-![image](https://github.com/user-attachments/assets/81ecd5d9-1723-4906-bb57-dfaab3c7505e)
+![projeto inicio](https://github.com/user-attachments/assets/76218528-4cd6-4944-8597-7119054191fa)
+![projeto perfil](https://github.com/user-attachments/assets/5d443f1b-fc80-42dd-83d9-d11d6c83bd7d)
+![projeto pagina1](https://github.com/user-attachments/assets/4b009e8b-1282-430e-9082-92a9d97d7356)
+![projeto top5](https://github.com/user-attachments/assets/b14ca79b-2456-4058-815a-387158734fe2)
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/c6b337b0-275b-4675-8669-ed9f1702d775">
 
 ## 💻 Prints das Páginas
 ### Tela inicial
 <img width="960" alt="inicio" src="https://github.com/user-attachments/assets/795380f7-b0c5-4821-a94a-992c7c5cd98d">
-
+<img width="960" alt="perfil" src="https://github.com/user-attachments/assets/8da0cd0e-7d43-43fa-9475-7c94c5be24a8">
 <img width="960" alt="pagina1" src="https://github.com/user-attachments/assets/14384527-1414-4d08-9be7-fe97835bd1a4">
 
 
