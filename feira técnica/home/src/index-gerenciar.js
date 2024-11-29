@@ -4,6 +4,7 @@ window.onload = function () {
         var saveStorage = JSON.parse(localStorage.getItem('perfis')) || [];
         var bloc = document.getElementById('bloco');
 
+
         // Iterar pelos perfis armazenados
         saveStorage.forEach((perfilData, index) => {
             // Criar o contêiner para cada perfil
@@ -12,8 +13,9 @@ window.onload = function () {
 
             // Criar a imagem do perfil
             var perfilImg = document.createElement('img');
-            perfilImg.src = perfilData.photo;
+            perfilImg.src = '../'+perfilData.photo;
             perfilImg.className = 'images';
+            console.log(perfilData.photo);
 
             // Criar o nome do perfil
             var textOne = document.createElement('span');
